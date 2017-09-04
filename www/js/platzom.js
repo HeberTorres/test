@@ -25,15 +25,39 @@ function platzom(str) {
 
 
     }
+
+    //si la palabra original es un palindromo, ninguna de las anteriores reglas funciona, y se devuelve la palabra intercaland
+    //entre mayuculas y minusculas
+    const reverse = (str) => str.split('').reverse().join('');
+
+    function minMay(str) {
+        const l = str.length;
+        let translation = "";
+        let capitalize = true;
+        for (let i = 0; i < l; i++) {
+            const char = str.charAt(i);
+            translation += capitalize ? char.toupperCase() : char.toLowerCase();
+
+        }
+
+
+    }
+
+
+    if (str = reverse(str)) {
+        return minMay(str);
+
+    }
+
+
+
+
+
+
+
     return translation;
 
 }
 console.log(platzom("sabanillas"));
 console.log(platzom("zorro"));
 console.log(platzom("programa"));
-
-
-
-
-//si la palabra original es un palindromo, ninguna de las anteriores reglas funciona, y se devuelve la palabra intercaland
-//entre mayuculas y minusculas
