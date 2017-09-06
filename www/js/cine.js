@@ -6,7 +6,6 @@ let edad = 15;
 let adulto = 1; //0 = no acompañado de un adulto
 const Edad_min = 18;
 
-
 if (edad < 18 && adulto == 0) {
     console.log("Menor y sin acompañante");
 } else {
