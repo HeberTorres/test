@@ -18,11 +18,19 @@
             code: function() {
                 new Rect(100, 200, 100, 100) //Los primeros dos elementos mueven el objeto, los ultimos 2 le dan forma
                     .addTo(stage)
-                    .attr('fillColor', 'blue')
+                    .attr('fillColor', 'red')
+                    .animate('9s', {
+                        fillColor: 'blue'
+                    })
+                    .animate('5s', { //Animacion, en este caso puedo hacer que transisione de un punto a otro.
+                        x: 500,
+                        y: 200,
+                    });
+
 
             },
-            width: 500,
-            height: 400
+            width: 1366,
+            height: 720
         })
     </script>
 
